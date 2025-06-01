@@ -1,0 +1,116 @@
+.l1{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+.l1:hover{
+    color: black;
+    text-decoration: none;
+    background-color: rgba(128,128,128,0.2);
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #f8f9fa;
+   
+
+}
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin: 0 10px;
+}
+.navigation li{
+    list-style: none;
+    display: inline;
+
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex; 
+    }
+    
+    .navigation {
+        position: absolute;
+        top: 60px;
+        right: 170px; 
+        flex-direction: column;
+        background-color: #f8f9fa;
+        width: 200px;
+        padding: 20px;
+        gap: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 5;
+    }
+    .showMenu {
+        right: 20px;
+    }
+    
+
+    .navActive .hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .navActive .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .navActive .hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .navigation {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: -200px; 
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        transition: right 0.3s ease; 
+        width: 180px;
+        z-index: 100;
+    }
+    
+    .showMenu {
+        right: 10px; 
+    }
+    
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px; 
+    }
+    
+    
+    .navigation li {
+        display: block;
+        margin: 10px 0;
+    }
+}

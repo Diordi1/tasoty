@@ -1,0 +1,13 @@
+.btn1{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right :15px;
+    background-color: #007bff;
+    color: black;
+    border:none;
+    cursor:pointer;
+}
+.btn1:hover{
+    background-color: #0056b3;
+    color: white;
+}
