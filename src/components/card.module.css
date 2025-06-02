@@ -1,11 +1,9 @@
 .card{
     background-color: white;
-    /* border: 1px solid black; */
-    /* border-color: black; */
-    /* position: relative; */
+   
     border-radius: 8px;
     width:fit-content;
-    /* border: 10px; */
+    
     box-shadow: 2px 2px 15px 15px rgba(0, 0, 0, 0.1);
     padding: 16px;
     margin: 16px;
@@ -116,9 +114,7 @@
 .closeButton:hover {
     background: rgba(0, 0, 0, 0.1);
 }
-/* Existing modal styles remain the same */
 
-/* Media queries for modal/popup responsive design */
 @media (max-width: 900px) {
     .modalContent {
         width: 95%;
